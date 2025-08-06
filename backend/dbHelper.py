@@ -4,11 +4,10 @@ from mysql.connector import Error
 def get_connection():
     try:
         return mysql.connector.connect(
-            host="mysql.railway.internal",
+            host="localhost",
             user="root",
-            password="MkezKJLRrbNrprdHmvOeNtseFpXoNIjv",
-            database="railway"
-            port="3306"
+            password="123456",
+            database="intern_portal"
         )
     except Error as e:
         print(f"Database connection error: {e}")
