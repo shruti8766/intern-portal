@@ -1,4 +1,5 @@
-const API_BASE = "https://intern-portal-b0c3.onrender.com";
+const API_BASE = "http://192.168.31.233:5000";
+
 let currentUser = null;
 
 function showLogin() {
