@@ -1,4 +1,4 @@
-onst API_BASE = "https://intern-portal-backend.onrender.com";
+const API_BASE = "https://intern-portal-b0c3.onrender.com";
 let currentUser = null;
 
 function showLogin() {
