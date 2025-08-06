@@ -1,6 +1,7 @@
 from flask import Flask, jsonify, request  # Added request import
 from flask_cors import CORS
 import dbHelper
+import os
 
 app = Flask(__name__)
 CORS(app)
@@ -29,4 +30,5 @@ def leaderboard():
     return jsonify(data)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(debug=False, host='0.0.0.0', port=port)
