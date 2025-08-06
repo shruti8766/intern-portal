@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:5000";
+onst API_BASE = "https://intern-portal-backend.onrender.com";
 let currentUser = null;
 
 function showLogin() {
